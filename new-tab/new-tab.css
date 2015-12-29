@@ -16,12 +16,23 @@ body {
   color: #8e7766;
   margin : 5px;
 }
-input, textarea, select {
+input, select {
   background-color: #111111;
   border: 1px solid #8e7766;
   color : #8e7766;
   font-family: 'Electrolize', sans-serif;
   padding: 10px;
+}
+textarea {
+  background-color: transparent;
+  border: 0;
+  color : #8e7766;
+  font-family: 'Electrolize', sans-serif;
+  padding: 10px;
+  resize:vertical;
+}
+textarea:focus {
+  outline: 1px solid #8e7766;
 }
 td, tr {
   width: 20%;

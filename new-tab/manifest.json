@@ -1,9 +1,10 @@
 {
-  "name": "Improved new tab page",
-  "description": "Display bookmarks on the new tab page",
+  "name": "beauty start",
+  "description": "定制的chrome初始页面",
   "version": "0.1",
   "incognito": "split",
   "chrome_url_overrides": {"newtab": "start-page.html"},
   "permissions": ["bookmarks", "history", "storage"],
+  "icons": {"128": "icon.png"},
   "manifest_version": 2
 }

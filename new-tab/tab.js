@@ -182,18 +182,18 @@
   addSearch('subreddit', function(s) {
     window.location.href = 'http://www.reddit.com/r/' + s;
   });
-  addSearch('issue', function(s) {
-    window.location.href = 'https://github.counsyl.com/dev/website/issues/' + s;
+  // addSearch('issue', function(s) {
+  //   window.location.href = 'https://github.counsyl.com/dev/website/issues/' + s;
+  // });
+  // addSearch('weather', function(s) {
+  //   window.location.href = 'http://www.wunderground.com/cgi-bin/findweather/getForecast?query=' + s;
+  // });
+  addSearch('baidu', function(s) {
+    window.location.href = 'https://www.baidu.com/s?wd='+s;
   });
-  addSearch('weather', function(s) {
-    window.location.href = 'http://www.wunderground.com/cgi-bin/findweather/getForecast?query=' + s;
-  });
-  addSearch('testp', function(s) {
-    window.location.href = 'https://testp-' + s + '.counsyl.com/helpdesk/';
-  });
-  addSearch('playground', function(s) {
-    window.location.href = 'https://playground.charlesleifer.com/?q=' + s;
-  });
+  // addSearch('playground', function(s) {
+  //   window.location.href = 'https://playground.charlesleifer.com/?q=' + s;
+  // });
 
   updateClock();
   bindNoteHandlers();
