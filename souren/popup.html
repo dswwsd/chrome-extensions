@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>搜人</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/xservice.js"></script>
+  <script src="js/popup.js"></script>
+</head>
+<body>
+  <div id="main-wrap">
+    <div class="top-wrap">
+      <div class="inside-layout">
+        <div class="history-action">
+          <div class="back"></div>
+          <div class="forward"></div>
+        </div>
+        <div class="app-info">
+          <a href="http://souren.alibaba.net" target="_blank">
+            <div class="app-logo"></div>
+            <div class="app-name need-html-locale">搜人</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrap">
+      <div class="search-layout">
+        <div class="inner-search-wrap">
+          <input type="search" class="search-input" tabindex="1" autosave="souren" results="5" autofocus="autofocus">
+        </div>
+      </div>
+      <div class="inner-layout">
+        <div class="history-list">
+          <span class="history-title">最近搜索记录(<a id="clean-history" href="#">清空</a>):</span>
+          <ul class="history-content"></ul>
+          <div class="history-none">无记录</div>
+        </div>
+        <div class="loading-bar hide"><span class="loading"></span></div>
+        <div class="no-result hide"><span>未找到相符人员</span></div>
+        <div class="need-login hide"><span>请先前往<a target="_blank" href="https://work.alibaba-inc.com">https://work.alibaba-inc.com</a>登陆</span></div>
+        <div class="result-list hide">
+        </div>
+        <div class="result-item-template hide">
+          <div class="result-item-wrap">
+            <div class="inner-item-layout">
+              <div class="main-variant-wrap">
+                <div class="avatar"><img src=""></div>
+                <div class="summary-info">
+                  <div>
+                    <span class="realname">REALNAME</span>
+                    <span class="nickname">NICKNAME</span>
+                    <!-- <span class="empid">EMP ID</span> -->
+                    <span class="job-desc">JOB DESC</span>
+                    <span class="quick-call"></span>
+                  </div>
+                  <div>
+                    <span class="department">DEPARTMENT</span>
+                  </div>
+                </div>
+              </div>
+              <div class="additional-info-wrap">
+                <table>
+                  <colgroup>
+                    <col style="width: 80px;">
+                    <col style="width: 95px;">
+                    <col style="width: 70px;">
+                    <col>
+                  </colgroup>
+                  <tr>
+                    <th>工　　号:</th>
+                    <td><span class="empid"></span></td>
+                    <th>性　　别:</th>
+                    <td><span class="gender"></span></td>
+                  </tr>
+                  <tr>
+                    <th>实线主管:</th>
+                    <td><span class="supervisorname"></span></td>
+                    <th>H　R　G:</th>
+                    <td><span class="hrg"></span></td>
+                  </tr>
+                  <tr>
+                    <th>入职时间:</th>
+                    <td><span class="hiredate"></span></td>
+                    <th>生　　日:</th>
+                    <td><span class="birthday"></span></td>
+                  </tr>
+                  <tr>
+                    <th>分　　机:</th>
+                    <td><span class="busnphone"></span></td>
+                    <th>手　　机:</th>
+                    <td><span class="cellphone"></span></td>
+                  </tr>
+                  <tr>
+                    <th>阿里旺旺:</th>
+                    <td><span class="aliww"></span></td>
+                    <th>淘宝旺旺:</th>
+                    <td><span class="tbww"></span></td>
+                  </tr>
+                  <tr>
+                    <th>邮　　箱:</th>
+                    <td colspan="3"><span class="email"></span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="phone-calling" tabindex="-1" style="overflow: hidden; display:none;" aria-hidden="false">
+    <div class="call-info">呼叫<span class="call-name"></span> (<span class="call-number"></span>)</div>
+    <div class="call-error hide">ERROR</div>
+    <div class="end-call" tabindex="1000"></div>
+  </div>
+  <div class="phone-mask" style="display: none"></div>
+</body>
+</html>

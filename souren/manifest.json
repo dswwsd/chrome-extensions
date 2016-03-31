@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "搜人",
+  "description": "http://souren.alibaba.net",
+  "version": "1.1.15",
+  "homepage_url": "http://souren.alibaba.net",
+  "icons": {
+      "16": "img/icon16.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+  },
+  "content_security_policy": "script-src 'self' https://work.alibaba-inc.com https://ehr.alibaba-inc.com https://login.alibaba-inc.com https://amos.im.alisoft.com https://u-console.alibaba-inc.com; object-src 'self'",
+  "permissions": ["*://*/*"],
+  "update_url": "http://souren.alibaba.net/update.xml",
+  "browser_action": {
+    "default_icon": "img/icon38.png",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
+      }
+    }
+  }
+}
