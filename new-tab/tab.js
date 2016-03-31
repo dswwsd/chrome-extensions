@@ -179,9 +179,6 @@
   addSearch('search', function(s) {
     window.location.href = 'https://www.google.com/#q=' + s;
   });
-  addSearch('subreddit', function(s) {
-    window.location.href = 'http://www.reddit.com/r/' + s;
-  });
   // addSearch('issue', function(s) {
   //   window.location.href = 'https://github.counsyl.com/dev/website/issues/' + s;
   // });
@@ -191,9 +188,9 @@
   addSearch('baidu', function(s) {
     window.location.href = 'https://www.baidu.com/s?wd='+s;
   });
-  // addSearch('playground', function(s) {
-  //   window.location.href = 'https://playground.charlesleifer.com/?q=' + s;
-  // });
+  addSearch('taobao', function(s) {
+     window.location.href = 'https://s.taobao.com/search?q=' + s;
+   });
 
   updateClock();
   bindNoteHandlers();
